@@ -1,0 +1,171 @@
+body{
+ 
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.checkout-by-me {
+  text-align: center;
+}
+
+.dot{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+ margin-right: 150px;
+
+}
+.checkout-by-me div{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 800px;
+}
+@media (min-width: 1200px)
+{
+  .container{
+    max-width: 1140px;
+  }
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+}
+form{
+  flex: 4;
+}
+.Yorder{
+  flex: 2;
+}
+.title{
+  
+  border-radius:5px 5px 0 0 ;
+  padding: 20px;
+  color: #080707;
+}
+h2{
+  margin: 0;
+  padding-left: 15px; 
+}
+.required{
+  color: rgb(1, 19, 4);
+}
+label, table{
+  display: block;
+  margin: 15px;
+}
+label>span{
+  float: left;
+  width: 25%;
+  margin-top: 12px;
+  padding-right: 10px;
+}
+input[type="text"], input[type="tel"], input[type="email"], select
+{
+  width: 70%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #010000;
+  color: rgb(8, 8, 8);
+  border-radius: 5px solid rgb(24, 23, 23);
+}
+select{
+  width: 72%;
+  height: 45px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.Yorder{
+  margin-top: 15px;
+  height: 600px;
+  padding: 20px;
+  border: 1px solid #1e1c1c;
+}
+table{
+  margin: 0;
+  padding: 0;
+}
+th{
+  border-bottom: 1px solid #ffffff;
+  padding: 10px 0;
+}
+tr>td:nth-child(1){
+  text-align: left;
+  color: #000000;
+  border-bottom: 1px solid #ffffff;
+}
+tr>td:nth-child(2){
+  text-align: right;
+  color: #483636;
+  border-bottom: 1px solid #ffffff;
+}
+td{
+  border-bottom: 1px solid #121010;
+  padding: 25px 25px 25px 0;
+}
+
+p{
+  display: block;
+  color: rgb(9, 7, 7);
+  margin: 0;
+  padding-left: 25px;
+}
+.Yorder>div{
+  padding: 15px 0; 
+}
+
+button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #021612;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+  background: #00bb99;
+}
+#icon{
+  display: flex;
+  justify-content: space-between;
+}
+.dot {
+ margin-right: 0px;
+  background: rgb(0, 0, 0);
+  transition: margin-right 4s,;
+}
+.dot:hover {
+  margin-right: 200px;
+}
+body:hover{
+margin: auto;
+}
+.hrtag{
+  width: 200px;
+  border: 2px solid black;
+  position: absolute;
+  transition: width 10s;
+}
+
+.hrtag{transition-timing-function: linear;}
+.hrtag:hover {
+  width: 700px;
+}
+
+

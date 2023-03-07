@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/02fd71c999.js" crossorigin="anonymous"></script>
+
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css\admin_product.css">
+</head>
+<body>
+    <nav>
+    </nav>
+    <div  id="navbar"> 
+      <ul>
+          <li  class="nav">
+              <a href="mainAdmin.html"><img style="border-radius: 10px;" src="WhatsApp Image 2023-01-17 at 4.00.27 PM (1).jpeg" alt=""></a>
+          </li>
+        <li  class="nav">
+          
+          <a style="color:white;background-color: rgb(0, 0, 0); font-size: 25px; border-radius: 8px; padding: 5px;" href="mainAdmin.html">Order</a>
+        </li>
+
+        <li class="nav">
+     
+          <a style="color:white;background-color: rgb(0, 0, 0); font-size: 25px; border-radius: 8px; padding: 5px;" href="admin_product.html">Product</a>
+        </li>
+
+        <li class="nav">
+          
+          <a style="color:white;background-color: rgb(0, 0, 0); font-size: 25px; border-radius: 8px; padding: 5px;" href="editProduct.html">Edit-Product</a>
+        </li>
+
+        <li class="nav">
+          
+          <a style="color:white;background-color: rgb(0, 0, 0); font-size: 25px; border-radius: 8px; padding: 5px;"href="addProduct.html">add Product</a>
+        </li>
+      </ul>
+    </div>
+    <div style="text-align: center;" class="search_box">
+      <input style="border: 2px solid rgb(0, 0, 0);height: 30px;border-radius: 5px;width: 300px;" type="search" placeholder="Search Pc's" id="input_search" oninput="search()">
+      <i class="fa-solid fa-magnifying-glass" id="search_btn"></i>
+      <label for="">Filter By Product Type</label>
+     <select name="" class="filter" onchange="filter_handle()">
+      <option value="">Filter</option>
+      <option value="laptop">Leptop</option>
+      <option value="desktop">Desktop</option>
+      <option value="accessories">Accessories</option>
+      <option value="monitors">Moniters</option>
+     </select>
+     <label for="">Filter By Price High to Low && Low to High</label>
+     <select name="" class="filter" onchange="sorted()">
+      <option value="">Filter</option>
+      <option value="hl">High To Low</option>
+      <option value="lh">Low To High</option>
+
+     </select>
+  </div>
+<hr>
+<div class="edit-product-page">
+<div class="edit-section">
+</div>
+<div class="show-all-order"></div>
+</div>
+</body>
+</html>
+<script src="scripts\admin_product.js"></script>

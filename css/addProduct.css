@@ -1,0 +1,78 @@
+.product-card-main img{
+    width: 80px;
+    text-align: center;
+}
+.show-all-order{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+   gap: 20px;
+   
+  
+}
+.show-all-order div{
+    border: 1px solid rgb(150, 150, 150);
+}
+.product-card-main{
+    border-radius: 9px;
+    font-size: 15px;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+@media screen and (max-width: 900px) {
+    .show-all-order{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       gap: 5px;
+      
+    }   
+}
+@media screen and (max-width: 500px) {
+    .show-all-order{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       gap: 5px;
+      
+    }   
+}
+
+.update-data form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-size: 20px;
+    width: 700px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left:30px ;
+    padding-top: 20px;
+    padding-bottom :10px; 
+    margin: auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ 
+}
+ form input{
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    margin-left: 80px;
+    border-radius: 5px;
+}
+.edit-section{
+    margin: auto;
+}
+#submit{
+    border: 0px;
+    padding: 7px;
+    color: rgb(252, 245, 245);
+    background-color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    margin-left: 80px;
+    
+}
+
+
+
+

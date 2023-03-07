@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/02fd71c999.js" crossorigin="anonymous"></script>
+
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css\editProduct.css">
+</head>
+<body>
+    <nav>
+    </nav>
+    <div  id="navbar"> 
+      <ul>
+          <li  class="nav">
+              <a href="mainAdmin.html"><img style="border-radius: 10px;" src="WhatsApp Image 2023-01-17 at 4.00.27 PM (1).jpeg" alt=""></a>
+          </li>
+        <li  class="nav">
+          
+          <a style="color:white;background-color: rgb(0, 0, 0); font-size: 25px; border-radius: 8px; padding: 5px;" href="mainAdmin.html">Order</a>
+        </li>
+
+        <li class="nav">
+     
+          <a style="color:white;background-color: rgb(0, 0, 0); font-size: 25px; border-radius: 8px; padding: 5px;" href="admin_product.html">Product</a>
+        </li>
+
+        <li class="nav">
+          
+          <a style="color:white;background-color: rgb(0, 0, 0); font-size: 25px; border-radius: 8px; padding: 5px;" href="editProduct.html">Edit-Product</a>
+        </li>
+
+        <li class="nav">
+          
+          <a style="color:white;background-color: rgb(0, 0, 0); font-size: 25px; border-radius: 8px; padding: 5px;"href="addProduct.html">add Product</a>
+        </li>
+      </ul>
+    </div>
+      <div class="search_box">
+        <input style="height: 30px;" type="search" placeholder="Search Pc's" id="input_search" oninput="search()">
+        <i class="fa-solid fa-magnifying-glass" id="search_btn"></i>
+        <label for="">Filter By Product Type</label>
+       <select name="" class="filter" onchange="filter_handle()">
+        <option value="">Filter</option>
+        <option value="laptop">Leptop</option>
+        <option value="desktop">Desktop</option>
+        <option value="accessories">Accessories</option>
+        <option value="monitors">Moniters</option>
+       </select>
+       <label for="">Filter By Price High to Low && Low to High</label>
+       <select name="" class="filter" onchange="sorted()">
+        <option value="">Filter</option>
+        <option value="hl">High To Low</option>
+        <option value="lh">Low To High</option>
+
+       </select>
+    </div>
+<hr>
+<div class="edit-product-page">
+<div class="edit-section">
+    <div class="update-data show-data">
+    <h1>Edit/Delete Product</h1>
+        <form action="">
+         <label for="">Enter Name </label>
+        <input type="text" id="p-name">
+        <label for="">Enter Image-1</label>
+        <input type="text" id="image-1">
+        <label for="">Enter Image-2</label>
+        <input type="text" id="image-2">
+        <label for="">Enter Image-3</label>
+        <input type="text" id="image-3">
+        <label for="">Enter Ram</label>
+        <input type="text" id="ram">
+        <label for="">Enter Rom</label>
+        <input type="text" id="rom">
+        <label for="">Enter Line</label>
+        <input type="text" id="line">
+        <label for="">Enter screen size</label>
+        <input type="text" id="size">
+        <label for="">Enter price </label>
+        <input type="text" id="price">
+        <label for="">Enter Color</label>
+        <input type="text" id="color">
+        <label for="">Enter Description</label>
+        <input type="text" id="Description">
+        <label for="">Enter strikeoffprize</label>
+        <input type="text" id="strikeoffprize">
+        <label for="">Enter Category</label>
+        <input type="text" id="Category">
+        <input id="submit" type="submit" id="submit">
+        </form>
+      
+    </div>
+</div>
+<div class="show-all-order"></div>
+</div>
+</body>
+</html>
+<script src="scripts\editProduct.js"></script>
